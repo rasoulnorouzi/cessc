@@ -26,8 +26,8 @@ Causal language involves clauses or phrases where one event, state, action, or e
 #### 2.2.1 General Purpose Dataset
 We drew upon earlier work that  introduced six datasets for analyzing causal sentences (Tan, Zuo et al. , 2022). However, as the Penn Discourse Treebank (PDTB) dataset is not openly available, it was excluded from our study. The following is a summary of the datasets that were utilized to construct the combined corpus:
 
- **AltLex:** Annotated causal language utilizing alternative lexicalizations within single sentences from news articles. However, it has limitations including a small size, exclusion of implicit signals, and consideration solely of intra-sentence relations.
- 
+**AltLex:** Annotated causal language utilizing alternative lexicalizations within single sentences from news articles. However, it has limitations including a small size, exclusion of implicit signals, and consideration solely of intra-sentence relations.
+
 **BECAUSE 2.0:** Annotations of cause, effect, and connective spans based on Construction Grammar principles within single sentences from diverse sources. Its limitations comprise a modest size and omission of inter-sentence relations.
 
 **CausalTimeBank (CTB):** Explicit causal relation annotations between events within the TempEval-3 corpus. It focuses solely on annotating events and disregards contextual information.

@@ -136,9 +136,17 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "cdd40e8762360141",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -157,15 +165,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "11eef589dfacf15b",
+  "active": "cbb3c82340de7f8b",
   "lastOpenFiles": [
+    "index.md",
+    "README.md",
+    "My Library.bib",
+    "files/My Library.bib",
     "files/combined_dataset_summary.tgn",
     "files",
     "New folder",
     "combined_dataset_summary.tgn",
-    "README.md",
     "Requirements.md",
-    "index.md",
     "Todays Program and Plans.md",
     "Plans.md",
     "2024-02-26.md",

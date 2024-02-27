@@ -24,13 +24,10 @@ To address the challenges of ambiguity and lack of precision when extracting cau
 
 Following the fine-tuning of our model, we will address the following research questions:
 
-a)     Which model works better in extracting causal language sentences from social science context?
-
-b)    Does fine-tuning models using domain specific training data confer a performance advantage?
-
-c)     Does the performance of general causal sentence extraction models generalize to data from the context of social scientific literature?
-
-d)    Does the curated dataset for social science contribute to increase the performance of general and domain specific models?
+- a) Which model works better in extracting causal language sentences from social science context?
+- b) Does fine-tuning models using domain specific training data confer a performance advantage?
+- c) Does the performance of general causal sentence extraction models generalize to data from the context of social scientific literature?
+- d) Does the curated dataset for social science contribute to increase the performance of general and domain specific models?
 
 
 ## References

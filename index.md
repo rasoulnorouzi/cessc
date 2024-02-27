@@ -46,4 +46,13 @@ This dataset is balanced, and we  divided it into 70 percent for training, 10 p
 This dataset was created by merging the social science training set and the general purpose training set, after removing duplicate samples and performing undersampling. Following the merge, 80% of the data was allocated for training, with the remaining 20% used for validation. 
 
 
-
+## References
+1. Berkman, E. T., & Wilson, S. M. (2021). So useful as a good theory? The practicality crisis in (social) psychological theory. _Perspectives on Psychological Science_, _16_(4), 864–874.
+2. Busetti, S. (2023). Causality is good for practice: Policy design and reverse engineering. _Policy Sciences_, _56_(2), 419–438. https://doi.org/10.1007/s11077-023-09493-7
+3. Gross, N. (2018). The Structure of Causal Chains. _Sociological Theory_, _36_(4), 343–367. https://doi.org/10.1177/0735275118811377
+4. Hedström, P., & Ylikoski, P. (2010). Causal Mechanisms in the Social Sciences. _Annual Review of Sociology_, _36_(1), 49–67. https://doi.org/10.1146/annurev.soc.012809.102632
+5. Meehl, P. E. (1990). Appraising and Amending Theories: The Strategy of Lakatosian Defense and Two Principles that Warrant It. _Psychological Inquiry_, _1_(2), 108–141. https://doi.org/10.1207/s15327965pli0102_1
+6. Pearl, J. (2009). _Causal inference in statistics: An overview_.
+7. Reiter, B. (2017). _Theory and methodology of exploratory social science research_.
+8. Sanbonmatsu, D. M., Cooley, E. H., & Butner, J. E. (2021). The Impact of Complexity on Methods and Findings in Psychological Science. _Frontiers in Psychology_, _11_, 580111. https://doi.org/10.3389/fpsyg.2020.580111
+9. Van De Ven, A. H. (1989). Nothing Is Quite So Practical as a Good Theory. _Academy of Management Review_, _14_(4), 486–489. https://doi.org/10.5465/amr.1989.4308370

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "128de7eb7452153e",
+        "id": "e90ca5ffcff4cb2a",
         "type": "tabs",
         "children": [
           {
-            "id": "cbb3c82340de7f8b",
+            "id": "3198b1c1761e5ce9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "index.md"
-              }
+              "state": {}
             }
           },
           {
@@ -123,7 +116,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,8 +157,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cbb3c82340de7f8b",
+  "active": "3198b1c1761e5ce9",
   "lastOpenFiles": [
+    "Requirements.md",
+    "todo.md",
     "index.md",
     "README.md",
     "My Library.bib",
@@ -175,7 +169,6 @@
     "files",
     "New folder",
     "combined_dataset_summary.tgn",
-    "Requirements.md",
     "Todays Program and Plans.md",
     "Plans.md",
     "2024-02-26.md",

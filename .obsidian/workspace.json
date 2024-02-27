@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "75fddc3cc174babb",
+        "id": "fc1405b9c6d70bb8",
         "type": "tabs",
         "children": [
           {
-            "id": "6b7ea85a46dd16f3",
+            "id": "b7d88e786488b9e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad6fad36cfbe8e52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Todays Program and Plans.md",
                 "mode": "source",
                 "source": false
               }
@@ -157,12 +169,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "11eef589dfacf15b",
+  "active": "b7d88e786488b9e0",
   "lastOpenFiles": [
-    "2024-02-26.md",
+    "Todays Program and Plans.md",
     "index.md",
+    "Plans.md",
+    "2024-02-26.md",
     "README.md",
-    "Untitled.md",
     "().md",
     "PerformanceTable.md",
     "PerformanceTable 1.md",

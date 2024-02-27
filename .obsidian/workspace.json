@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "772325b1d6336c9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,11 +157,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "772325b1d6336c9c",
+  "active": "b7d88e786488b9e0",
   "lastOpenFiles": [
-    "README.md",
     "Requirements.md",
     "index.md",
+    "README.md",
     "Todays Program and Plans.md",
     "Plans.md",
     "2024-02-26.md",

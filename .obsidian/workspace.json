@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3198b1c1761e5ce9",
+            "id": "8bb14f42a34fe0aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "RESEARC_ENVIRONMENT.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2c50397344c6c1ea",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "RESEARC_ENVIRONMENT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "RESEARC_ENVIRONMENT.md"
               }
             }
           },
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "RESEARC_ENVIRONMENT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,12 +165,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3198b1c1761e5ce9",
+  "active": "8bb14f42a34fe0aa",
   "lastOpenFiles": [
-    "Requirements.md",
-    "todo.md",
-    "index.md",
     "README.md",
+    "RESEARC_ENVIRONMENT.md",
+    "ToDo.md",
+    "Requirements.md",
+    "index.md",
+    "todo.md",
     "My Library.bib",
     "files/My Library.bib",
     "files/combined_dataset_summary.tgn",

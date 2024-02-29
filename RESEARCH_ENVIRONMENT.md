@@ -18,7 +18,7 @@ This document outlines the technical environment and packages used for conductin
 ### System Configuration for Training
 - **Platform:** Google Colab Pro
 - **GPU:** NVIDIA A100
-- **Graphic RAM:** 4 GB
+- **Graphic RAM:** 40 GB
 - **System RAM:** 83.5 GB
 - **Disk Space:** 201.2 GB
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RESEARC_ENVIRONMENT.md",
+                "file": "RESEARCH_ENVIRONMENT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RESEARC_ENVIRONMENT.md",
+                "file": "RESEARCH_ENVIRONMENT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RESEARC_ENVIRONMENT.md"
+                "file": "RESEARCH_ENVIRONMENT.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RESEARC_ENVIRONMENT.md",
+                "file": "RESEARCH_ENVIRONMENT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
   "active": "8bb14f42a34fe0aa",
   "lastOpenFiles": [
     "README.md",
-    "RESEARC_ENVIRONMENT.md",
+    "RESEARCH_ENVIRONMENT.md",
     "ToDo.md",
     "Requirements.md",
     "index.md",

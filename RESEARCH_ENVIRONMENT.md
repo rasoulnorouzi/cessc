@@ -1,6 +1,6 @@
 # Academic Research Environment Documentation
 
-This document outlines the technical environment and packages used for conducting academic research, specifically focusing on converting PDF files to text and training models for causal sentence extraction, along with details on project management, writing, coding, and referencing tools.
+This document outlines the technical environment and packages used for conducting this repo research, specifically focusing on converting PDF files to text and training models for causal sentence extraction, along with details on project management, writing, coding, and referencing tools.
 
 ## PDF to Text Conversion
 

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RESEARCH_ENVIRONMENT.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b43acc359d8e4b9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Writing Attachment.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RESEARCH_ENVIRONMENT.md",
+                "file": "Writing Attachment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RESEARCH_ENVIRONMENT.md"
+                "file": "Writing Attachment.md"
               }
             }
           },
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RESEARCH_ENVIRONMENT.md",
+                "file": "Writing Attachment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,13 +178,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8bb14f42a34fe0aa",
+  "active": "b43acc359d8e4b9d",
   "lastOpenFiles": [
-    "README.md",
     "RESEARCH_ENVIRONMENT.md",
+    "Writing Attachment.md",
+    "README.md",
+    "index.md",
     "ToDo.md",
     "Requirements.md",
-    "index.md",
     "todo.md",
     "My Library.bib",
     "files/My Library.bib",

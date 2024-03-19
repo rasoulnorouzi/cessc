@@ -24,7 +24,6 @@ This document outlines the technical environment and packages used for conductin
 
 ### Programming Environment
 - **Python Version:** 3.11.5
-
 ### Key Python Packages
 - `pandas`: 1.5.3
 - `transformers`: 4.37.2

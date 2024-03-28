@@ -31,7 +31,7 @@ def evaluate(
     def collate_fn(batch):
         texts = [item['text'] for item in batch]
         labels = torch.tensor([item['label'] for item in batch])
-        encoding = tokenizer(texts, truncation=True, padding=True, return_tensors="pt")
+        encoding = tokenizer(texts, truncation=True, padding=True, max_length=512, return_tensors="pt")
         encoding['labels'] = labels
         return encoding
 
@@ -108,3 +108,4 @@ def calculate_metrics(confusion_matrix):
     print(f'Weighted Precision: {weighted_precision:.4f}')
     print(f'Weighted Recall: {weighted_recall:.4f}')
     print(f'Weighted F1-Score: {weighted_f1:.4f}')
+    

@@ -53,6 +53,7 @@ class FineTuner:
 
         self.trainer.train()
 
+    # Note for myself: I have to remove this method from the class and make it a standalone function
     def evaluate(self, test_dataset):
         tokenized_test_dataset = self.tokenize_dataset(test_dataset)
         results = self.trainer.evaluate(tokenized_test_dataset)
@@ -71,3 +72,4 @@ class FineTuner:
         print(classification_report(y_true, y_pred, target_names=["Class 0", "Class 1"]))  # Adjust target_names as needed
 
         return results
+    

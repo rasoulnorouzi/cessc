@@ -20,7 +20,7 @@ def error_analysis(model, tokenizer, dataset, batch_size=8):
     def collate_fn(batch):
         texts = [item['text'] for item in batch]
         labels = torch.tensor([item['label'] for item in batch])
-        encoding = tokenizer(texts, truncation=True, padding=True, return_tensors="pt")
+        encoding = tokenizer(texts, truncation=True, padding=True, return_tensors="pt", max_length=512)
         encoding['labels'] = labels  # Include labels in the batch
         return encoding
 

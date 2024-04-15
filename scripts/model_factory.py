@@ -1,6 +1,6 @@
 # %%
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, BitsAndBytesConfig 
-from configurations import config
+from scripts.configurations import config
 import torch
 from peft import (
     get_peft_model,

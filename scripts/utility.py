@@ -4,7 +4,7 @@ import random
 import numpy as np
 import os
 from transformers import set_seed as hf_set_seed
-from configurations import seed_value
+from scripts.configurations import seed_value
 
 seed_value = seed_value
 

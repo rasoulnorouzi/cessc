@@ -32,3 +32,51 @@ These datasets collectively form a robust resource for training, validating, and
 
 Each CSV file is formatted with consistent column structures to facilitate seamless model training, validation, and testing processes across different dataset categories.
 
+## Scripts
+
+This directory contains the Python scripts that are essential for the machine learning workflow in this project, including configurations, model evaluation, fine-tuning, and utility functions.
+
+### `configurations.py`
+
+This script holds all the configuration parameters for the project. It is designed to centralize and manage the settings that control various aspects of the machine learning process, such as model parameters, training options, and dataset paths.
+
+### `evaluation.py`
+
+Contains the code for evaluating the models. This script is used to apply the trained model on the test datasets and to calculate performance metrics that gauge the effectiveness of the model in causal extraction.
+
+### `finetuner.py`
+
+This script is used for fine-tuning the models on the specified training data. It includes functions and classes that handle the training process, including data loading, model updates, and logging training progress.
+
+### `model_factory.py`
+
+Acts as a factory for creating different machine learning models, allowing for easy instantiation and management of various model architectures for the project. It supports the following models:
+
+- `BERT`: The Bidirectional Encoder Representations from Transformers model, known for its effectiveness in natural language processing tasks.
+- `SciBERT`: A variant of BERT pretrained on scientific text, which is especially suitable for tasks in the scientific domain.
+- `Roberta`: A robustly optimized BERT approach, which has been shown to outperform BERT on several benchmarking tasks.
+- `LLAMA2-7b`: A large language model adapted for a range of tasks, providing powerful text understanding and generation capabilities.
+- `Mistral-7b`: Another large-scale language model designed for high performance in a variety of complex language tasks.
+
+This script is responsible for handling model selection based on the project configuration, initializing them with appropriate weights and settings, and preparing them for integration into the training or evaluation workflows.
+
+### `requirements.txt`
+
+Specifies all the Python dependencies required by the scripts. This file ensures consistent environments across different setups, making it easier to replicate the project's results. The following packages and versions are specified:
+- `numpy==1.25.2`: A package for scientific computing with Python.
+- `torch`: An open-source machine learning library.
+- `pandas==2.0.3`: A library providing high-performance, easy-to-use data structures and data analysis tools.
+- `datasets==2.18.0`: A library for easily accessing and sharing datasets.
+- `transformers==4.39.3`: A library providing thousands of pre-trained models to perform tasks on texts.
+- `evaluate==0.4.1`: A library for evaluating models (duplicate entry removed).
+- `bitsandbytes==0.43.1`: A library for optimizing CUDA operations.
+- `accelerate==0.29.2`: A library for accelerating training on CPUs and GPUs.
+- `peft==0.10.0`: A performance estimator for transformers.
+- `sentencepiece==0.2.0`: A library for unsupervised text tokenization and detokenization.
+- `loralib`: A library or module required for the project (details not specified).
+
+### `utility.py`
+
+Provides utility functions that are used across the project. These functions might include data preprocessing, result visualization, or any other helper functions that are not part of the core machine learning process but support it.
+
+

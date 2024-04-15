@@ -28,8 +28,6 @@ These datasets collectively form a robust resource for training, validating, and
 
 - `all_val.csv`: The merged validation set includes a mix of examples from both the social science and general domains. It is used for fine-tuning the models to perform well on a wide range of topics.
 
-- `all_test.csv`: The merged test set provides a comprehensive evaluation across all included topics, testing the model's robustness in causal extraction across both specialized and generalized contexts.
-
 Each CSV file is formatted with consistent column structures to facilitate seamless model training, validation, and testing processes across different dataset categories.
 
 ## Scripts
@@ -78,5 +76,26 @@ Specifies all the Python dependencies required by the scripts. This file ensures
 ### `utility.py`
 
 Provides utility functions that are used across the project. These functions might include data preprocessing, result visualization, or any other helper functions that are not part of the core machine learning process but support it.
+
+## Reproducibility
+
+The `reproducibility.ipynb` notebook is a key resource in this project for ensuring that our results can be consistently replicated. It provides a step-by-step example of how to reproduce the training and testing process specifically for the BERT model across different datasets. The notebook is structured as follows:
+
+- **Environment Setup**: Instructions on setting up the computational environment, including the installation of all necessary dependencies as detailed in `requirements.txt`.
+- **Kernel Restart**: Guidelines on restarting the Jupyter kernel before commencing the fine-tuning of any model, to ensure a clean state.
+- **Model Training**:
+  - Training the BERT model on the general-purpose dataset (`general_train.csv`).
+  - Training on the social science dataset (`ssc_train.csv`).
+  - Training on the merged dataset (`all_train.csv`).
+- **Model Testing**:
+  - Testing the BERT model on the general-purpose test set (`general_test.csv`).
+  - Testing on the social science test set (`ssc_test.csv`).
+
+For fine-tuning additional models such as SciBERT, Roberta, LLAMA2-7b, and Mistral-7b, one can follow the same process as detailed in the notebook for the BERT model. Each step is annotated with clear instructions and code snippets to guide the user through the process.
+
+For exact reproducibility, it is essential to run these processes on a GPU A100. This specification ensures that the computational power and architecture are consistent with the original environment where the models were trained and tested.
+
+The reproducibility guide underscores the commitment to scientific rigor and transparency in this project, providing a clear path for others to validate and build upon our work.
+
 
 

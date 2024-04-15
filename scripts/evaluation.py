@@ -20,8 +20,7 @@ class SimpleDataset(Dataset):
 def evaluate(
         model: PreTrainedModel,
         tokenizer: PreTrainedTokenizer, 
-        dataset, batch_size=8,
-        average='binary'
+        dataset, batch_size=8
         ):
     texts = [item['text'] for item in dataset]
     labels = [item['label'] for item in dataset]

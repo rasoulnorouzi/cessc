@@ -13,11 +13,12 @@ from transformers import Trainer, TrainingArguments, DataCollatorWithPadding
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 class FineTuner:
-    def __init__(self, model, tokenizer, training_args):
+    def __init__(self, model, tokenizer, training_args, model_output_dir):
         self.model = model
         self.tokenizer = tokenizer
         self.training_args = training_args
         self.trainer = None
+        self.model_output_dir = model_output_dir
 
     def tokenize_dataset(self, dataset):
         def tokenize_function(examples):
@@ -43,6 +44,7 @@ class FineTuner:
             }
 
         self.trainer = Trainer(
+            output_dir = self.model_output_dir,
             model=self.model,
             args=self.training_args,
             train_dataset=tokenized_train_dataset,

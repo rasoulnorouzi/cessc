@@ -9,7 +9,6 @@ config = {
             "num_labels": 2
         },
         "training_args": TrainingArguments(
-            output_dir= "output_BERT",
             num_train_epochs=10,
             per_device_train_batch_size=8,
             per_device_eval_batch_size=8,
@@ -34,7 +33,6 @@ config = {
         },
         "training_args": TrainingArguments(
 
-            output_dir= "output",
             num_train_epochs=10,
             per_device_train_batch_size=8,
             per_device_eval_batch_size=8,
@@ -58,8 +56,6 @@ config = {
         },
 
         "training_args": TrainingArguments(
-            
-            output_dir= "output",
             num_train_epochs=10,
             per_device_train_batch_size=20,
             per_device_eval_batch_size=20,
@@ -99,7 +95,6 @@ config = {
         },
 
         "training_args": TrainingArguments(
-            output_dir= "LLAMA2-7b_output",
             num_train_epochs=10,
             per_device_train_batch_size=8,
             per_device_eval_batch_size=8,

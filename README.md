@@ -78,7 +78,10 @@ Specifies all the Python dependencies required by the scripts. This file ensures
 Provides utility functions that are used across the project. These functions might include data preprocessing, result visualization, or any other helper functions that are not part of the core machine learning process but support it.
 
 ## Reproducibility
-
+```
+git clone
+cd cessc
+```
 The `reproducibility.ipynb` notebook is a key resource in this project for ensuring that our results can be consistently replicated. It provides a step-by-step example of how to reproduce the training and testing process specifically for the BERT model across different datasets. The notebook is structured as follows:
 
 - **Environment Setup**: Instructions on setting up the computational environment, including the installation of all necessary dependencies as detailed in `requirements.txt`.

@@ -1,7 +1,3 @@
-# causal-extraction-social-science 
-
-## Datasets
-
 # causal-extraction-social-science
 
 ## Datasets

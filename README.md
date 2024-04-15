@@ -79,7 +79,7 @@ Provides utility functions that are used across the project. These functions mig
 
 ## Reproducibility
 ```
-git clone
+git clone https://github.com/rasoulnorouzi/cessc.git
 cd cessc
 ```
 The `reproducibility.ipynb` notebook is a key resource in this project for ensuring that our results can be consistently replicated. It provides a step-by-step example of how to reproduce the training and testing process specifically for the BERT model across different datasets. The notebook is structured as follows:

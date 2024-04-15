@@ -1,5 +1,42 @@
 from torch.utils.data import DataLoader
 import torch
+import random
+import numpy as np
+import os
+from transformers import set_seed as hf_set_seed
+from configurations import seed_value
+
+seed_value = seed_value
+
+def set_all_seeds(seed_value = seed_value):
+    """
+    Set seed for reproducibility across all used libraries and systems that support seed setting.
+    
+    Parameters:
+        seed_value (int): The seed number to use for all random number generators.
+    """
+    # Set seed for PyTorch
+    torch.manual_seed(seed_value)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed_value)
+        torch.cuda.manual_seed(seed_value)
+    
+    # Set seed for Numpy
+    np.random.seed(seed_value)
+    
+    # Set seed for Python's random module
+    random.seed(seed_value)
+    
+    # Set seed for any hashing-based operations
+    os.environ['PYTHONHASHSEED'] = str(seed_value)
+    
+    # Ensure reproducibility for PyTorch when using CUDA (if available)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    
+    # Set seed for Hugging Face transformers
+    hf_set_seed(seed_value)
+
 
 def error_analysis(model, tokenizer, dataset, batch_size=8):
     class SimpleDataset:
@@ -54,3 +91,6 @@ def error_analysis(model, tokenizer, dataset, batch_size=8):
     ]
 
     return misclassified_samples
+
+
+

@@ -52,24 +52,3 @@ class FineTuner:
         )
 
         self.trainer.train()
-
-    # Note for myself: I have to remove this method from the class and make it a standalone function
-    def evaluate(self, test_dataset):
-        tokenized_test_dataset = self.tokenize_dataset(test_dataset)
-        results = self.trainer.evaluate(tokenized_test_dataset)
-
-        # Obtain the predictions and true labels for the confusion matrix and classification report
-        predictions = self.trainer.predict(tokenized_test_dataset)
-        y_true = predictions.label_ids
-        y_pred = np.argmax(predictions.predictions, axis=1)
-
-        # Confusion Matrix
-        print("Confusion Matrix:")
-        print(confusion_matrix(y_true, y_pred))
-
-        # Classification Report
-        print("\nClassification Report:")
-        print(classification_report(y_true, y_pred, target_names=["Class 0", "Class 1"]))  # Adjust target_names as needed
-
-        return results
-    

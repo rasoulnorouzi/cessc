@@ -1,0 +1,11 @@
+numpy==1.25.2
+torch
+pandas==2.0.3
+datasets==2.18.0
+transformers==4.39.3
+evaluate==0.4.1  # Duplicate entry removed
+bitsandbytes==0.43.1
+accelerate==0.29.2
+peft==0.10.0
+sentencepiece==0.2.0
+loralib

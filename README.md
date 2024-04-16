@@ -36,9 +36,9 @@ To use this project, first clone the repository and navigate to the project dire
 git clone https://github.com/rasoulnorouzi/cessc.git
 cd cessc
 ```
-Then open the `reproducibility.ipynb` to see an example of how to run the code:
+Then open the `tutorial_reproducibility.ipynb` to see an example of how to run the code:
 ````bas
-jupyter notebook reproducibility.ipynb
+jupyter notebook tutorial_reproducibility.ipynb
 ````
 ### Fine-Tuning Models
 To fine-tune a model:
@@ -46,7 +46,7 @@ To fine-tune a model:
 2.  In the script, specify your dataset's path and name.
 3.  Choose the model for fine-tuning from our available models.
 ### Reproducibility
-The provided Jupyter notebook (`reproducibility.ipynb`) guides you through the model training and evaluation process. Remember to restart the notebook kernel after each training session to maintain consistency.
+The provided Jupyter notebook (`tutorial_reproducibility.ipynb`) guides you through the model training and evaluation process. Remember to restart the notebook kernel after each training session to maintain consistency.
 ## Project Structure
 ````
 cessc/
@@ -69,7 +69,7 @@ cessc/
 │   └── requirements.txt
 ├── README.md
 ├── research_environment.md
-└── reproducibility.ipynb
+└── tutorial_reproducibility.ipynb
 ````
 ## Citing This Work
 

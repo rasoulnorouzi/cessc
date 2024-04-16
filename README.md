@@ -1,6 +1,6 @@
 # Causal Sentence Extractor Project
 
-Welcome to the Causal Sentence Extractor repository, designed to facilitate the extraction of causal sentences from social science texts using machine learning models.
+Welcome to the Causal Sentence Extractor repository, designed to facilitate the extraction of causal sentences from social science texts using transformers models.
 
 ## Table of Contents
 - [Introduction](#introduction)

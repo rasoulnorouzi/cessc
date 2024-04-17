@@ -6,11 +6,11 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 - [Introduction](#introduction)
 - [Installation and Setup](#installation-and-setup)
 - [Datasets](#datasets)
-- [Inference](#Inference-with-Huggingface-API)
 - [Usage](#usage)
   - [Getting Started](#getting-started)
   - [Fine-Tuning Models](#fine-tuning-models)
   - [Reproducibility](#reproducibility)
+- [Inference with Huggingface API](#Inference-with-Huggingface-API) 
 - [Project Structure](#project-structure)
 - [Citing This Work](#citing-this-work)
 - [License](#license)
@@ -28,6 +28,26 @@ The datasets directory contains multiple subsets crucial for training and evalua
 - **ssc_:** ssc_train.csv, ssc_val.csv, ssc_test.csv – Our custom curated datasets.
 - **general_:** Datasets compiled from various sources like AltLex, BECAUSE 2.0, CausalTimeBank (CTB), EventStoryLine (ESL), and SemEval 2010 Task 8. These datasets undergo a deduplication process, balancing using undersampling, and are split into general_train.csv, general_val.csv, with general_test.csv remaining unbalanced.
 - **all_:** A merged set of the above two categories for extended training and validation (all_train.csv, all_val.csv).
+
+## Usage
+
+### Getting Started
+To use this project, first clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/rasoulnorouzi/cessc.git
+cd cessc
+```
+Then open the `tutorial_reproducibility.ipynb` to see an example of how to run the code:
+````bas
+jupyter notebook tutorial_reproducibility.ipynb
+````
+### Fine-Tuning Models
+To fine-tune a model:
+1.  Ensure your dataset is in CSV format with `text` and `label` columns.
+2.  In the script, specify your dataset's path and name.
+3.  Choose the model for fine-tuning from our available models.
+### Reproducibility
+The provided Jupyter notebook (`tutorial_reproducibility.ipynb`) guides you through the model training and evaluation process. Remember to restart the notebook kernel after each training session to maintain consistency.
 
 ## Inference with Huggingface API
 To utilize our best model for causal and non-causal classification tailored to the social science context, you can use the Huggingface `pipeline` for easy inference or load the model directly for more customized use. Below are examples demonstrating both approaches, and you can also [check the model directly on Huggingface](https://huggingface.co/rasoultilburg/ssc_bert?text=In+the+beginning%2C+Sonca+seemed+to+have+intensified+rapidly+since+its+formation+%2C+however%2C+soon+the+storm+weakened+back+to+a+minimal+tropical+storm+because+of+dry+air+entering+the+LLCC+that+caused+it+to+elongate+and+weaken.) for quick experiments.
@@ -62,25 +82,6 @@ output = model(**tokens)
 print(output)
 ```
 
-## Usage
-
-### Getting Started
-To use this project, first clone the repository and navigate to the project directory:
-```bash
-git clone https://github.com/rasoulnorouzi/cessc.git
-cd cessc
-```
-Then open the `tutorial_reproducibility.ipynb` to see an example of how to run the code:
-````bas
-jupyter notebook tutorial_reproducibility.ipynb
-````
-### Fine-Tuning Models
-To fine-tune a model:
-1.  Ensure your dataset is in CSV format with `text` and `label` columns.
-2.  In the script, specify your dataset's path and name.
-3.  Choose the model for fine-tuning from our available models.
-### Reproducibility
-The provided Jupyter notebook (`tutorial_reproducibility.ipynb`) guides you through the model training and evaluation process. Remember to restart the notebook kernel after each training session to maintain consistency.
 ## Project Structure
 ````
 cessc/

@@ -116,7 +116,43 @@ config = {
             fp16=False
 
         )
+    },
+    "Mistral-7b": {
+        "model_settings": {
+            "model_type": "mistralai/Mistral-7B-v0.1",
+            "num_labels": 2
+        },
+        "device_map":"auto",
+        "quantization": 
+        {
+        "load_in_4bit":"True",
+        "load_4bit_use_double_quant":"True",
+        "bnb_4bit_quant_type":"nf4",
+        "bnb_4bit_compute_dtype":"torch.bfloat16",
+        },
+        "peft_config":{
+            "r":8, 
+            "lora_alpha":32, 
+            "lora_dropout":0.1,
+            "bias":"none",
+            "target_modules":["q_proj","v_proj"],
+        },
+        "training_args": TrainingArguments(
+            output_dir= "output",
+            num_train_epochs=10,
+            per_device_train_batch_size=8,
+            per_device_eval_batch_size=8,
+            evaluation_strategy="epoch",
+            save_strategy="epoch",  # This line is added to match the evaluation_strategy
+            logging_steps=1,
+            weight_decay=0.01,
+            learning_rate=2e-5,
+            do_train=True,
+            do_eval=True,
+            load_best_model_at_end=True,
+            metric_for_best_model="f1",
+            seed=seed_value,
+            fp16=False
+            )   
+        }
     }
-}   
-
-

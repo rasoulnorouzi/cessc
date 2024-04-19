@@ -74,7 +74,8 @@ def initialize_model(model_name):
         model.config.use_cache = False
 
     elif model_name=="Mistral-7b":
-        tokenizer = AutoTokenizer.from_pretrained(config["Mistral-7b"]["model_settings"]["model_type"])
+        tokenizer = AutoTokenizer.from_pretrained(config["Mistral-7b"]["model_settings"]["model_type"],
+                                                  token = config["Mistral-7b"]["token_pass"])
         tokenizer.pad_token_id = tokenizer.eos_token_id
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -89,7 +90,8 @@ def initialize_model(model_name):
             config["Mistral-7b"]["model_settings"]["model_type"],
             num_labels=config["Mistral-7b"]["model_settings"]["num_labels"],
             quantization_config=bnb_config,
-            device_map=config["Mistral-7b"]["device_map"]
+            device_map=config["Mistral-7b"]["device_map"],
+            token = config["Mistral-7b"]["token_pass"]
         )
 
         model.config.pad_token_id = model.config.eos_token_id

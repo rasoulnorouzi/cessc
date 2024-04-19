@@ -123,6 +123,7 @@ config = {
             "num_labels": 2
         },
         "device_map":"auto",
+        "token_pass":"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",
         "quantization": 
         {
         "load_in_4bit":"True",

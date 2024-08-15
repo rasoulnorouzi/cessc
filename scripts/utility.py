@@ -94,3 +94,17 @@ def error_analysis(model, tokenizer, dataset, batch_size=8):
 
 
 
+@torch.no_grad()
+def analyze_predictions(data, model, device, tokenizer, batch_size=32):
+    predictions = []
+    logits = []
+    model.to(device)
+    model.eval()
+
+    for i in range(0, len(data), batch_size):
+        batch = tokenizer(data[i:i+batch_size], padding=True, truncation=True, return_tensors='pt')
+        batch = {k: v.to(device) for k, v in batch.items()}
+        outputs = model(**batch)
+        predictions.extend(torch.argmax(outputs.logits, dim=-1).cpu().numpy())
+        logits.extend(outputs.logits.cpu().numpy())
+    return predictions, logits

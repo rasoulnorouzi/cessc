@@ -63,9 +63,6 @@ To set up your environment for full functionality of the tools, please see `rese
 
 ## Datasets
 ### Social Science Data Curation
-## Datasets
-
-### Dataset Curation Process
 Our social science dataset was carefully curated through the following process:
 
 ```mermaid

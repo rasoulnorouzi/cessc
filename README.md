@@ -7,7 +7,7 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 - [Methodology](#methodology)
 - [Datasets](#datasets)
   - [Social Science Data Curation](#social-science-data-curation)
-  - [Dataset Files](#dataset-files)
+  - [Repository Dataset Files](#repository-dataset-files)
 - [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
   - [Getting Started](#getting-started)
@@ -123,7 +123,7 @@ The curation process involved several key steps:
    - Validation: 10%
    - Testing: 20%
 
-### Dataset Files 
+### Repository Dataset Files 
 The datasets directory contains multiple subsets crucial for training and evaluating the models:
 
 - **ssc_:** ssc_train.csv, ssc_val.csv, ssc_test.csv – Our custom curated datasets.

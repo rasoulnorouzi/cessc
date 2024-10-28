@@ -42,7 +42,7 @@ flowchart TD
         A3[Merged Dataset] --> C3[Combined Training Set<br>Original Test Sets]
     end
 
-    subgraph Models["2. Model Selection"]
+    subgraph Models 2. Model Selection
         M1[BERT]
         M2[SciBERT]
         M3[RoBERTa Large]
@@ -50,13 +50,13 @@ flowchart TD
         M5[Mistral-7b]
     end
 
-    subgraph Training["3. Fine-tuning"]
+    subgraph Training 3. Fine-tuning
         T1[General Purpose Training]
         T2[Social Science Training]
         T3[Merged Training]
     end
 
-    subgraph Eval["4. Evaluation"]
+    subgraph Eval 4. Evaluation
         E1[Test on Both Domains]
         E2[Calculate Performance Metrics]
     end

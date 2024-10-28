@@ -7,6 +7,7 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 - [Methodology](#methodology)
 - [Datasets](#datasets)
   - [Social Science Data Curation](#social-science-data-curation)
+  - [Dataset Files](#dataset-files)
 - [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
   - [Getting Started](#getting-started)

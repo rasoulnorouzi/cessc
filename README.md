@@ -39,16 +39,11 @@ flowchart TD
     subgraph Data["1. Data Preparation"]
         A1[General Purpose Dataset] --> C1[Training & Test Sets]
         A2[Social Science Dataset] --> C2[Training & Test Sets]
-        A3[Merged Dataset] --> C3[Combined Training Set<br>Original Test Sets]
+        A3[Merged Dataset] --> C3[Combined Training Set<br/>Original Test Sets]
     end
 
     subgraph Models["2. Model Selection"]
-        M1[["5 Models:
-        BERT
-        SciBERT
-        RoBERTa Large
-        LLAMA2-7b
-        Mistral-7b"]]
+        M1["BERT<br/>SciBERT<br/>RoBERTa Large<br/>LLAMA2-7b<br/>Mistral-7b"]
     end
 
     subgraph Training["3. Fine-tuning"]

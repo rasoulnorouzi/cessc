@@ -19,10 +19,6 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
 
-# Causal Sentence Extractor Project
-
-[previous content remains the same...]
-
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
 
@@ -36,7 +32,7 @@ Our approach combines general-purpose and domain-specific datasets to create rob
 
 ```mermaid
 flowchart TD
-    subgraph ["Data 1. Data Preparation"]
+    subgraph "Data 1. Data Preparation"
         A1[General Purpose Dataset] --> C1[Training & Test Sets]
         A2[Social Science Dataset] --> C2[Training & Test Sets]
         A3[Merged Dataset] --> C3[Combined Training Set<br>Original Test Sets]

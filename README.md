@@ -18,6 +18,41 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
 
+## Data Curation
+```mermaid
+flowchart TD
+    A[Start: 2,590 Articles from Cooperation Databank] --> B[PDF to Text Conversion using Grobid]
+    B --> C[Sentence Segmentation]
+    C --> D[Error Correction & Post-processing]
+    
+    D --> E[Initial Labeling by Author RN]
+    E --> F{Classification}
+    
+    F -->|Clear Cases| G[941 Sentences]
+    F -->|Ambiguous| H[117 Sentences]
+    
+    H --> I[Review by All Authors]
+    I --> J[Fleiss' Kappa = 0.76]
+    J --> K[Majority Voting for Consensus]
+    
+    G --> L[Final Dataset]
+    K --> L
+    
+    L --> M[1,058 Total Sentences]
+    M --> N[529 Causal Sentences]
+    M --> O[529 Non-causal Sentences]
+    
+    N --> P[Dataset Split]
+    O --> P
+    
+    P --> Q[70% Training]
+    P --> R[10% Validation]
+    P --> S[20% Testing]
+    
+    style M fill:#f9f,stroke:#333,stroke-width:2px
+    style L fill:#bbf,stroke:#333,stroke-width:2px
+
+```
 ## Installation and Setup
 To set up your environment for full functionality of the tools, please see `research_environment.md`. For optimal performance and reproducibility, using a NVIDIA A100 GPU is essential.
 

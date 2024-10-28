@@ -32,30 +32,28 @@ Our approach combines general-purpose and domain-specific datasets to create rob
 
 ```mermaid
 flowchart TD
-    subgraph "1. Data Preparation"
+    subgraph A[Data Preparation]
         A1[General Purpose Dataset] --> C1[Training & Test Sets]
         A2[Social Science Dataset] --> C2[Training & Test Sets]
-        A3[Merged Dataset] --> C3[Combined Training Set<br>Original Test Sets]
+        A3[Merged Dataset] --> C3[Combined Training Set]
     end
 
-    subgraph "2. Model Selection"
-        M[Five Models:<br>BERT<br>SciBERT<br>RoBERTa Large<br>LLAMA2-7b<br>Mistral-7b]
+    subgraph B[Model Selection]
+        M[BERT SciBERT RoBERTa LLAMA2-7b Mistral-7b]
     end
 
-    subgraph "3. Fine-tuning"
+    subgraph C[Fine-tuning]
         T1[General Purpose Training]
         T2[Social Science Training]
         T3[Merged Training]
     end
 
-    subgraph "4. Evaluation"
+    subgraph D[Evaluation]
         E1[Test on Both Domains]
-        E2[Calculate Performance Metrics]
+        E2[Calculate Metrics]
     end
 
-    "1. Data Preparation" --> "2. Model Selection"
-    "2. Model Selection" --> "3. Fine-tuning"
-    "3. Fine-tuning" --> "4. Evaluation"
+    A --> B --> C --> D
 ```
 
 ## Installation and Setup

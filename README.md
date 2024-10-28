@@ -4,6 +4,7 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Methodology](#methodology)
 - [Installation and Setup](#installation-and-setup)
 - [Datasets](#datasets)
 - [Usage](#usage)
@@ -18,41 +19,57 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
 
-## Data Curation
+# Causal Sentence Extractor Project
+
+[previous content remains the same...]
+
+## Introduction
+This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
+
+## Methodology
+Our approach combines general-purpose and domain-specific datasets to create robust models for causal sentence extraction. The methodology consists of four main steps:
+
+1. **Data Preparation**: We utilize both general-purpose causal datasets and a custom-curated social science dataset, along with a merged version combining both training sets.
+2. **Model Selection**: Five transformer models are evaluated, BERT, SciBERT, RoBERTa Large, LLAMA2-7b and Mistral-7b.
+3. **Fine-tuning**: Each model undergoes three training scenarios using general-purpose, social science, and merged training set datasets.
+4. **Evaluation**: Models are tested on both general and social science domains test sets to assess performance and domain adaptation.
+
 ```mermaid
 flowchart TD
-    A[Start: 2,590 Articles from Cooperation Databank] --> B[PDF to Text Conversion using Grobid]
-    B --> C[Sentence Segmentation]
-    C --> D[Error Correction & Post-processing]
-    
-    D --> E[Initial Labeling by Author RN]
-    E --> F{Classification}
-    
-    F -->|Clear Cases| G[941 Sentences]
-    F -->|Ambiguous| H[117 Sentences]
-    
-    H --> I[Review by All Authors]
-    I --> J[Fleiss' Kappa = 0.76]
-    J --> K[Majority Voting for Consensus]
-    
-    G --> L[Final Dataset]
-    K --> L
-    
-    L --> M[1,058 Total Sentences]
-    M --> N[529 Causal Sentences]
-    M --> O[529 Non-causal Sentences]
-    
-    N --> P[Dataset Split]
-    O --> P
-    
-    P --> Q[70% Training]
-    P --> R[10% Validation]
-    P --> S[20% Testing]
-    
-    style M fill:#f9f,stroke:#333,stroke-width:2px
-    style L fill:#bbf,stroke:#333,stroke-width:2px
+    subgraph Data["1. Data Preparation"]
+        A1[General Purpose Dataset] --> C1[Training & Test Sets]
+        A2[Social Science Dataset] --> C2[Training & Test Sets]
+        A3[Merged Dataset] --> C3[Combined Training Set<br>Original Test Sets]
+    end
 
+    subgraph Models["2. Model Selection"]
+        M1[["5 Models:
+        BERT
+        SciBERT
+        RoBERTa Large
+        LLAMA2-7b
+        Mistral-7b"]]
+    end
+
+    subgraph Training["3. Fine-tuning"]
+        T1[General Purpose Training]
+        T2[Social Science Training]
+        T3[Merged Training]
+    end
+
+    subgraph Eval["4. Evaluation"]
+        E1[Test on Both Domains]
+        E2[Calculate Performance Metrics]
+    end
+
+    Data --> Models
+    Models --> Training
+    Training --> Eval
+
+    classDef highlight fill:#f9f,stroke:#333,stroke-width:2px
+    class Training highlight
 ```
+
 ## Installation and Setup
 To set up your environment for full functionality of the tools, please see `research_environment.md`. For optimal performance and reproducibility, using a NVIDIA A100 GPU is essential.
 

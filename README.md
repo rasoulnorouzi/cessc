@@ -5,8 +5,9 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Methodology](#methodology)
-- [Installation and Setup](#installation-and-setup)
 - [Datasets](#datasets)
+  - [Social Science Data Curation](#social-science-data-curation)
+- [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
   - [Getting Started](#getting-started)
   - [Fine-Tuning Models](#fine-tuning-models)
@@ -60,12 +61,74 @@ flowchart TD
 To set up your environment for full functionality of the tools, please see `research_environment.md`. For optimal performance and reproducibility, using a NVIDIA A100 GPU is essential.
 
 ## Datasets
+### Social Science Data Curation
+## Datasets
 
+### Dataset Curation Process
+Our social science dataset was carefully curated through the following process:
+
+```mermaid
+flowchart TD
+    A[Start: 2,590 Articles from Cooperation Databank] --> B[PDF to Text Conversion using Grobid]
+    B --> C[Sentence Segmentation]
+    C --> D[Error Correction & Post-processing]
+    
+    D --> E[Initial Labeling by Author RN]
+    E --> F{Classification}
+    
+    F -->|Clear Cases| G[941 Sentences]
+    F -->|Ambiguous| H[117 Sentences]
+    
+    H --> I[Review by All Authors]
+    I --> J[Fleiss' Kappa = 0.76]
+    J --> K[Majority Voting for Consensus]
+    
+    G --> L[Final Dataset]
+    K --> L
+    
+    L --> M[1,058 Total Sentences]
+    M --> N[529 Causal Sentences]
+    M --> O[529 Non-causal Sentences]
+    
+    N --> P[Dataset Split]
+    O --> P
+    
+    P --> Q[70% Training]
+    P --> R[10% Validation]
+    P --> S[20% Testing]
+```
+The curation process involved several key steps:
+
+1. **Initial Data Collection**
+   - Started with 2,590 articles from the Cooperation Databank
+
+2. **Text Processing**
+   - Converted PDFs to text using Grobid
+   - Performed sentence segmentation
+   - Applied post-processing error corrections
+
+3. **Annotation Process**
+   - Initial labeling identified 941 clear cases and 117 ambiguous cases
+   - Ambiguous cases underwent review by all authors
+   - Achieved substantial inter-rater agreement (Fleiss' Kappa = 0.76)
+   - Used majority voting for final consensus
+
+4. **Final Dataset**
+   - Balanced dataset of 1,058 sentences
+   - Equal distribution: 529 causal and 529 non-causal sentences
+
+5. **Dataset Splitting**
+   - Training: 70%
+   - Validation: 10%
+   - Testing: 20%
+
+### Dataset Files 
 The datasets directory contains multiple subsets crucial for training and evaluating the models:
 
 - **ssc_:** ssc_train.csv, ssc_val.csv, ssc_test.csv – Our custom curated datasets.
 - **general_:** Datasets compiled from various sources like AltLex, BECAUSE 2.0, CausalTimeBank (CTB), EventStoryLine (ESL), and SemEval 2010 Task 8. These datasets undergo a deduplication process, balancing using undersampling, and are split into general_train.csv, general_val.csv, with general_test.csv remaining unbalanced.
 - **all_:** A merged set of the above two categories for extended training and validation (all_train.csv, all_val.csv).
+
 
 ## Usage
 

@@ -206,15 +206,11 @@ cessc/
 └── tutorial_reproducibility.ipynb
 ````
 ## Citing This Work
+- 📄 [Paper](https://www.cambridge.org/core/journals/research-synthesis-methods/article/capturing-causal-claims-a-finetuned-text-mining-model-for-extracting-causal-sentences-from-social-science-papers/E76E6EFB3373DE4FE6D9DCDB56271CEE?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark) 
 
 If this project aids in your research, please cite it using the following BibTeX entry:
 ````
-@article{Norouzi2024,
-  author = {Norouzi, R. and Kleinberg, B. and Vermunt, J. and Van Lissa, C. J.},
-  title = {Capturing Causal Claims: A Fine-Tuned Text Mining Model for Extracting Causal Sentences from Social Science Papers},
-  year = {2024},
-  doi = {10.31234/osf.io/kwtpm}
-}
+@article{Norouzi_Kleinberg_Vermunt_van Lissa_2025, title={Capturing causal claims: A fine-tuned text mining model for extracting causal sentences from social science papers}, DOI={10.1017/rsm.2024.13}, journal={Research Synthesis Methods}, author={Norouzi, Rasoul and Kleinberg, Bennett and Vermunt, Jeroen K. and van Lissa, Caspar J.}, year={2025}, pages={1–18}} 
 ````
 ## License
 

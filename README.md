@@ -20,6 +20,7 @@ Welcome to the Causal Sentence Extractor repository, designed to facilitate the 
 
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
+- 📄 [Paper](https://www.cambridge.org/core/journals/research-synthesis-methods/article/capturing-causal-claims-a-finetuned-text-mining-model-for-extracting-causal-sentences-from-social-science-papers/E76E6EFB3373DE4FE6D9DCDB56271CEE?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark) 
 
 ## Introduction
 This repository contains the resources needed to run, modify, and evaluate the text mining models developed for extracting causal sentences from social science context.
